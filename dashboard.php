@@ -5,9 +5,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title>.: FLAKT :.</title>
+        <title>FLAKT MÉXICO</title>
 
-        <meta name="description" content="Flakt Fan Selection">
+        <meta name="description" content="FLAKT MÉXICO - FAN SELECTOR">
 
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
 
@@ -34,6 +34,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+        <link rel="stylesheet" href="css/themes/spring.css">
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
         <link rel="stylesheet" href="css/themes.css">
@@ -88,7 +89,7 @@
             'header-fixed-top'                              has to be added only if the class 'navbar-fixed-top' was added on header.navbar
             'header-fixed-bottom'                           has to be added only if the class 'navbar-fixed-bottom' was added on header.navbar
         -->
-        <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
+        <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations header-fixed-top">
             <!-- Alternative Sidebar -->
             <div id="sidebar-alt">
                 <!-- Wrapper for scrolling functionality -->
@@ -277,7 +278,7 @@
                     <div class="sidebar-content">
                         <!-- Brand -->
                         <a href="index.html" class="sidebar-brand">
-                            <i class="gi gi-flash"></i><strong>Pro</strong>UI
+                            <img src="img/icon-blanco.png" alt=""><strong> Flakt</strong> México
                         </a>
                         <!-- END Brand -->
 
@@ -285,10 +286,10 @@
                         <div class="sidebar-section sidebar-user clearfix">
                             <div class="sidebar-user-avatar">
                                 <a href="page_ready_user_profile.html">
-                                    <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar">
+                                    <img src="img/placeholders/avatars/avatarPersona.jpg" alt="avatar">
                                 </a>
                             </div>
-                            <div class="sidebar-user-name">John Doe</div>
+                            <div class="sidebar-user-name">Administrador</div>
                             <div class="sidebar-user-links">
                                 <a href="page_ready_user_profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
                                 <a href="page_ready_inbox.html" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
@@ -298,39 +299,6 @@
                             </div>
                         </div>
                         <!-- END User Info -->
-
-                        <!-- Theme Colors -->
-                        <!-- Change Color Theme functionality can be found in js/app.js - templateOptions() -->
-                        <ul class="sidebar-section sidebar-themes clearfix">
-                            <li class="active">
-                                <a href="javascript:void(0)" class="themed-background-dark-default themed-border-default" data-theme="default" data-toggle="tooltip" title="Default Blue"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-night themed-border-night" data-theme="css/themes/night.css" data-toggle="tooltip" title="Night"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-amethyst themed-border-amethyst" data-theme="css/themes/amethyst.css" data-toggle="tooltip" title="Amethyst"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-modern themed-border-modern" data-theme="css/themes/modern.css" data-toggle="tooltip" title="Modern"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-autumn themed-border-autumn" data-theme="css/themes/autumn.css" data-toggle="tooltip" title="Autumn"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-flatie themed-border-flatie" data-theme="css/themes/flatie.css" data-toggle="tooltip" title="Flatie"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-spring themed-border-spring" data-theme="css/themes/spring.css" data-toggle="tooltip" title="Spring"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-fancy themed-border-fancy" data-theme="css/themes/fancy.css" data-toggle="tooltip" title="Fancy"></a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="themed-background-dark-fire themed-border-fire" data-theme="css/themes/fire.css" data-toggle="tooltip" title="Fire"></a>
-                            </li>
-                        </ul>
-                        <!-- END Theme Colors -->
 
                         <!-- Sidebar Navigation -->
                         <ul class="sidebar-nav">
@@ -653,33 +621,6 @@
                             </li>
                         </ul>
                         <!-- END Sidebar Navigation -->
-
-                        <!-- Sidebar Notifications -->
-                        <div class="sidebar-header">
-                            <span class="sidebar-header-options clearfix">
-                                <a href="javascript:void(0)" data-toggle="tooltip" title="Refresh"><i class="gi gi-refresh"></i></a>
-                            </span>
-                            <span class="sidebar-header-title">Activity</span>
-                        </div>
-                        <div class="sidebar-section">
-                            <div class="alert alert-success alert-alt">
-                                <small>5 min ago</small><br>
-                                <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
-                            </div>
-                            <div class="alert alert-info alert-alt">
-                                <small>10 min ago</small><br>
-                                <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
-                            </div>
-                            <div class="alert alert-warning alert-alt">
-                                <small>3 hours ago</small><br>
-                                <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
-                            </div>
-                            <div class="alert alert-danger alert-alt">
-                                <small>Yesterday</small><br>
-                                <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)"><strong>New bug submitted</strong></a>
-                            </div>
-                        </div>
-                        <!-- END Sidebar Notifications -->
                     </div>
                     <!-- END Sidebar Content -->
                 </div>
@@ -703,7 +644,7 @@
                     'navbar-fixed-bottom'       for a bottom fixed header (fixed sidebars with scroll will be auto initialized, functionality can be found in js/app.js - handleSidebar()))
                         'header-fixed-bottom'   has to be added on #page-container only if the class 'navbar-fixed-bottom' was added
                 -->
-                <header class="navbar navbar-default">
+                <header class="navbar navbar-default navbar-fixed-top">
                     <!-- Left Header Navigation -->
                     <ul class="nav navbar-nav-custom">
                         <!-- Main Sidebar Toggle Button -->
@@ -713,43 +654,6 @@
                             </a>
                         </li>
                         <!-- END Main Sidebar Toggle Button -->
-
-                        <!-- Template Options -->
-                        <!-- Change Options functionality can be found in js/app.js - templateOptions() -->
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="gi gi-settings"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-custom dropdown-options">
-                                <li class="dropdown-header text-center">Header Style</li>
-                                <li>
-                                    <div class="btn-group btn-group-justified btn-group-sm">
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-header-default">Light</a>
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-header-inverse">Dark</a>
-                                    </div>
-                                </li>
-                                <li class="dropdown-header text-center">Page Style</li>
-                                <li>
-                                    <div class="btn-group btn-group-justified btn-group-sm">
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-main-style">Default</a>
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-main-style-alt">Alternative</a>
-                                    </div>
-                                </li>
-                                <li class="dropdown-header text-center">Main Layout</li>
-                                <li>
-                                    <button class="btn btn-sm btn-block btn-primary" id="options-header-top">Fixed Side/Header (Top)</button>
-                                    <button class="btn btn-sm btn-block btn-primary" id="options-header-bottom">Fixed Side/Header (Bottom)</button>
-                                </li>
-                                <li class="dropdown-header text-center">Footer</li>
-                                <li>
-                                    <div class="btn-group btn-group-justified btn-group-sm">
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-footer-static">Default</a>
-                                        <a href="javascript:void(0)" class="btn btn-primary" id="options-footer-fixed">Fixed</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END Template Options -->
                     </ul>
                     <!-- END Left Header Navigation -->
 
@@ -847,51 +751,12 @@
                 <!-- Page content -->
                 <div id="page-content">
                     <!-- Dashboard Header -->
-                    <!-- For an image header add the class 'content-header-media' and an image as in the following example -->
-                    <div class="content-header content-header-media">
+                    <div class="content-header">
                         <div class="header-section">
-                            <div class="row">
-                                <!-- Main Title (hidden on small devices for the statistics to fit) -->
-                                <div class="col-md-4 col-lg-6 hidden-xs hidden-sm">
-                                    <h1>Welcome <strong>Admin</strong><br><small>You Look Awesome!</small></h1>
-                                </div>
-                                <!-- END Main Title -->
-
-                                <!-- Top Stats -->
-                                <div class="col-md-8 col-lg-6">
-                                    <div class="row text-center">
-                                        <div class="col-xs-4 col-sm-3">
-                                            <h2 class="animation-hatch">
-                                                $<strong>93.7k</strong><br>
-                                                <small><i class="fa fa-thumbs-o-up"></i> Great</small>
-                                            </h2>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-3">
-                                            <h2 class="animation-hatch">
-                                                <strong>167k</strong><br>
-                                                <small><i class="fa fa-heart-o"></i> Likes</small>
-                                            </h2>
-                                        </div>
-                                        <div class="col-xs-4 col-sm-3">
-                                            <h2 class="animation-hatch">
-                                                <strong>101</strong><br>
-                                                <small><i class="fa fa-calendar-o"></i> Events</small>
-                                            </h2>
-                                        </div>
-                                        <!-- We hide the last stat to fit the other 3 on small devices -->
-                                        <div class="col-sm-3 hidden-xs">
-                                            <h2 class="animation-hatch">
-                                                <strong>27&deg; C</strong><br>
-                                                <small><i class="fa fa-map-marker"></i> Sydney</small>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END Top Stats -->
-                            </div>
+                            <h1>
+                                <i class="gi gi-dashboard"></i>Bienvenido <strong>Eduardo Martínez</strong><br><small>Dashboard</small>
+                            </h1>
                         </div>
-                        <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
-                        <img src="img/placeholders/headers/dashboard_header.jpg" alt="header image" class="animation-pulseSlow">
                     </div>
                     <!-- END Dashboard Header -->
 

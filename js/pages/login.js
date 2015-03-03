@@ -81,14 +81,14 @@ var Login = function() {
                     },
                     'login-password': {
                         required: true,
-                        minlength: 5
+                        minlength: 8
                     }
                 },
                 messages: {
-                    'login-email': 'Please enter your account\'s email',
+                    'login-email': 'Por favor introduce tu Email',
                     'login-password': {
-                        required: 'Please provide your password',
-                        minlength: 'Your password must be at least 5 characters long'
+                        required: 'Por favor introduce tu Contraseña',
+                        minlength: 'Tu Contraseña debe tener minimo 8 caracteres'
                     }
                 }
             });
@@ -115,7 +115,7 @@ var Login = function() {
                     }
                 },
                 messages: {
-                    'reminder-email': 'Please enter your account\'s email'
+                    'reminder-email': 'Por favor introduce tu Email'
                 }
             });
 
@@ -153,7 +153,7 @@ var Login = function() {
                     },
                     'register-password': {
                         required: true,
-                        minlength: 5
+                        minlength: 8
                     },
                     'register-password-verify': {
                         required: true,
@@ -165,25 +165,25 @@ var Login = function() {
                 },
                 messages: {
                     'register-firstname': {
-                        required: 'Please enter your firstname',
-                        minlength: 'Please enter your firstname'
+                        required: 'Por favor introduce tu Nombre',
+                        minlength: 'Por favor introduce tu Nombre'
                     },
                     'register-lastname': {
-                        required: 'Please enter your lastname',
-                        minlength: 'Please enter your lastname'
+                        required: 'Por favor introduce tu Apellido',
+                        minlength: 'Por favor introduce tu Apellido'
                     },
-                    'register-email': 'Please enter a valid email address',
+                    'register-email': 'Por favor introduce un Email valido',
                     'register-password': {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long'
+                        required: 'Por favor introduce una Contraseña',
+                        minlength: 'Tu Contraseña debe tener minimo 8 caracteres'
                     },
                     'register-password-verify': {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long',
-                        equalTo: 'Please enter the same password as above'
+                        required: 'Por favor introduce una Contraseña',
+                        minlength: 'Tu Contraseña debe tener minimo 8 caracteres',
+                        equalTo: 'Por favor introduce la misma Contraseña'
                     },
                     'register-terms': {
-                        required: 'Please accept the terms!'
+                        required: 'Por favor acepta los terminos!'
                     }
                 }
             });

@@ -5,11 +5,9 @@
     <head>
         <meta charset="utf-8">
 
-        <title>ProUI - Responsive Bootstrap Admin Template</title>
+        <title>FLAKT MÉXICO</title>
 
-        <meta name="description" content="ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.">
-        <meta name="author" content="pixelcave">
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="description" content="FLAKT MÉXICO - FAN SELECTOR">
 
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
 
@@ -36,6 +34,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
+        <link rel="stylesheet" href="css/themes/spring.css">
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
         <link rel="stylesheet" href="css/themes.css">
@@ -47,21 +46,25 @@
     <body>
         <!-- Login Full Background -->
         <!-- For best results use an image with a resolution of 1280x1280 pixels (prefer a blurred image for smaller file size) -->
-        <img src="img/placeholders/backgrounds/login_full_bg.jpg" alt="Login Full Background" class="full-bg animation-pulseSlow">
+        <img src="img/placeholders/backgrounds/flakt_wallpaper_03.jpeg" alt="Login Full Background" class="full-bg animation-pulseSlow">
         <!-- END Login Full Background -->
 
         <!-- Login Container -->
         <div id="login-container" class="animation-fadeIn">
             <!-- Login Title -->
             <div class="login-title text-center">
-                <h1><i class="gi gi-flash"></i> <strong>ProUI</strong><br><small>Please <strong>Login</strong> or <strong>Register</strong></small></h1>
+                <h1>
+                	<strong>FLAKT MÉXICO</strong>
+                	<br>
+                	<small>Por favor <strong>Inicia sesión</strong> o <strong>Registrate</strong></small>
+                </h1>
             </div>
             <!-- END Login Title -->
 
             <!-- Login Block -->
             <div class="block push-bit">
                 <!-- Login Form -->
-                <form action="index.html" method="post" id="form-login" class="form-horizontal form-bordered form-control-borderless">
+                <form action="dashboard.php" method="post" id="form-login" class="form-horizontal form-bordered form-control-borderless">
                     <div class="form-group">
                         <div class="col-xs-12">
                             <div class="input-group">
@@ -74,25 +77,25 @@
                         <div class="col-xs-12">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
-                                <input type="password" id="login-password" name="login-password" class="form-control input-lg" placeholder="Password">
+                                <input type="password" id="login-password" name="login-password" class="form-control input-lg" placeholder="Contraseña">
                             </div>
                         </div>
                     </div>
                     <div class="form-group form-actions">
                         <div class="col-xs-4">
-                            <label class="switch switch-primary" data-toggle="tooltip" title="Remember Me?">
+                            <label class="switch switch-primary" data-toggle="tooltip" title="Recuerdame?">
                                 <input type="checkbox" id="login-remember-me" name="login-remember-me" checked>
                                 <span></span>
                             </label>
                         </div>
                         <div class="col-xs-8 text-right">
-                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Login to Dashboard</button>
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Iniciar sesión</button>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12 text-center">
-                            <a href="javascript:void(0)" id="link-reminder-login"><small>Forgot password?</small></a> -
-                            <a href="javascript:void(0)" id="link-register-login"><small>Create a new account</small></a>
+                            <a href="javascript:void(0)" id="link-reminder-login"><small>Olvidaste tu contraseña?</small></a> -
+                            <a href="javascript:void(0)" id="link-register-login"><small>Crear una cuenta</small></a>
                         </div>
                     </div>
                 </form>
@@ -110,12 +113,12 @@
                     </div>
                     <div class="form-group form-actions">
                         <div class="col-xs-12 text-right">
-                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Reset Password</button>
+                            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-angle-right"></i> Reiniciar contraseña</button>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12 text-center">
-                            <small>Did you remember your password?</small> <a href="javascript:void(0)" id="link-reminder"><small>Login</small></a>
+                            <small>Te acuerdas de tu contraseña?</small> <a href="javascript:void(0)" id="link-reminder"><small>Inicia sesión</small></a>
                         </div>
                     </div>
                 </form>
@@ -127,11 +130,11 @@
                         <div class="col-xs-6">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="gi gi-user"></i></span>
-                                <input type="text" id="register-firstname" name="register-firstname" class="form-control input-lg" placeholder="Firstname">
+                                <input type="text" id="register-firstname" name="register-firstname" class="form-control input-lg" placeholder="Nombre">
                             </div>
                         </div>
                         <div class="col-xs-6">
-                            <input type="text" id="register-lastname" name="register-lastname" class="form-control input-lg" placeholder="Lastname">
+                            <input type="text" id="register-lastname" name="register-lastname" class="form-control input-lg" placeholder="Apellido(s)">
                         </div>
                     </div>
                     <div class="form-group">
@@ -146,7 +149,7 @@
                         <div class="col-xs-12">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
-                                <input type="password" id="register-password" name="register-password" class="form-control input-lg" placeholder="Password">
+                                <input type="password" id="register-password" name="register-password" class="form-control input-lg" placeholder="Contraseña">
                             </div>
                         </div>
                     </div>
@@ -154,25 +157,25 @@
                         <div class="col-xs-12">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="gi gi-asterisk"></i></span>
-                                <input type="password" id="register-password-verify" name="register-password-verify" class="form-control input-lg" placeholder="Verify Password">
+                                <input type="password" id="register-password-verify" name="register-password-verify" class="form-control input-lg" placeholder="Verificar contraseña">
                             </div>
                         </div>
                     </div>
                     <div class="form-group form-actions">
                         <div class="col-xs-6">
-                            <a href="#modal-terms" data-toggle="modal" class="register-terms">Terms</a>
-                            <label class="switch switch-primary" data-toggle="tooltip" title="Agree to the terms">
+                            <a href="#modal-terms" data-toggle="modal" class="register-terms">Terminos</a>
+                            <label class="switch switch-primary" data-toggle="tooltip" title="Acepto los términos">
                                 <input type="checkbox" id="register-terms" name="register-terms">
                                 <span></span>
                             </label>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> Register Account</button>
+                            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> Registrar Cuenta</button>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12 text-center">
-                            <small>Do you have an account?</small> <a href="javascript:void(0)" id="link-register"><small>Login</small></a>
+                            <small>Tienes una cuenta?</small> <a href="javascript:void(0)" id="link-register"><small>Inicia sesión</small></a>
                         </div>
                     </div>
                 </form>
@@ -188,16 +191,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Terms &amp; Conditions</h4>
+                        <h4 class="modal-title">Términos &amp; Condiciones</h4>
                     </div>
                     <div class="modal-body">
-                        <h4>Title</h4>
-                        <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <h4>Title</h4>
-                        <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <h4>Title</h4>
+                        <h4>FALKT MÉXICO</h4>
                         <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <p>Donec lacinia venenatis metus at bibendum? In hac habitasse platea dictumst. Proin ac nibh rutrum lectus rhoncus eleifend. Sed porttitor pretium venenatis. Suspendisse potenti. Aliquam quis ligula elit. Aliquam at orci ac neque semper dictum. Sed tincidunt scelerisque ligula, et facilisis nulla hendrerit non. Suspendisse potenti. Pellentesque non accumsan orci. Praesent at lacinia dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
