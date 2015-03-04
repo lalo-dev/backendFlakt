@@ -42,6 +42,11 @@
 
         <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
         <script src="js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+        <style>
+            .bordeVerde{
+                border: 1px solid #27ae60;
+            }
+        </style>
     </head>
     <!-- In the PHP version you can set the following options from inc/config file -->
     <!--
@@ -90,185 +95,6 @@
             'header-fixed-bottom'                           has to be added only if the class 'navbar-fixed-bottom' was added on header.navbar
         -->
         <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations header-fixed-top">
-            <!-- Alternative Sidebar -->
-            <div id="sidebar-alt">
-                <!-- Wrapper for scrolling functionality -->
-                <div class="sidebar-scroll">
-                    <!-- Sidebar Content -->
-                    <div class="sidebar-content">
-                        <!-- Chat -->
-                        <!-- Chat demo functionality initialized in js/app.js -> chatUi() -->
-                        <a href="page_ready_chat.html" class="sidebar-title">
-                            <i class="gi gi-comments pull-right"></i> <strong>Chat</strong>UI
-                        </a>
-                        <!-- Chat Users -->
-                        <ul class="chat-users clearfix">
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-online">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar12.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-online">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar15.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-online">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar10.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-online">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-away">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar7.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-away">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar9.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="chat-user-busy">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar16.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar1.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar4.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar3.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar13.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <span></span>
-                                    <img src="img/placeholders/avatars/avatar5.jpg" alt="avatar" class="img-circle">
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- END Chat Users -->
-
-                        <!-- Chat Talk -->
-                        <div class="chat-talk display-none">
-                            <!-- Chat Info -->
-                            <div class="chat-talk-info sidebar-section">
-                                <img src="img/placeholders/avatars/avatar5.jpg" alt="avatar" class="img-circle pull-left">
-                                <strong>John</strong> Doe
-                                <button id="chat-talk-close-btn" class="btn btn-xs btn-default pull-right">
-                                    <i class="fa fa-times"></i>
-                                </button>
-                            </div>
-                            <!-- END Chat Info -->
-
-                            <!-- Chat Messages -->
-                            <ul class="chat-talk-messages">
-                                <li class="text-center"><small>Yesterday, 18:35</small></li>
-                                <li class="chat-talk-msg animation-slideRight">Hey admin?</li>
-                                <li class="chat-talk-msg animation-slideRight">How are you?</li>
-                                <li class="text-center"><small>Today, 7:10</small></li>
-                                <li class="chat-talk-msg chat-talk-msg-highlight themed-border animation-slideLeft">I'm fine, thanks!</li>
-                            </ul>
-                            <!-- END Chat Messages -->
-
-                            <!-- Chat Input -->
-                            <form action="index.html" method="post" id="sidebar-chat-form" class="chat-form">
-                                <input type="text" id="sidebar-chat-message" name="sidebar-chat-message" class="form-control form-control-borderless" placeholder="Type a message..">
-                            </form>
-                            <!-- END Chat Input -->
-                        </div>
-                        <!--  END Chat Talk -->
-                        <!-- END Chat -->
-
-                        <!-- Activity -->
-                        <a href="javascript:void(0)" class="sidebar-title">
-                            <i class="fa fa-globe pull-right"></i> <strong>Activity</strong>UI
-                        </a>
-                        <div class="sidebar-section">
-                            <div class="alert alert-danger alert-alt">
-                                <small>just now</small><br>
-                                <i class="fa fa-thumbs-up fa-fw"></i> Upgraded to Pro plan
-                            </div>
-                            <div class="alert alert-info alert-alt">
-                                <small>2 hours ago</small><br>
-                                <i class="gi gi-coins fa-fw"></i> You had a new sale!
-                            </div>
-                            <div class="alert alert-success alert-alt">
-                                <small>3 hours ago</small><br>
-                                <i class="fa fa-plus fa-fw"></i> <a href="page_ready_user_profile.html"><strong>John Doe</strong></a> would like to become friends!<br>
-                                <a href="javascript:void(0)" class="btn btn-xs btn-primary"><i class="fa fa-check"></i> Accept</a>
-                                <a href="javascript:void(0)" class="btn btn-xs btn-default"><i class="fa fa-times"></i> Ignore</a>
-                            </div>
-                            <div class="alert alert-warning alert-alt">
-                                <small>2 days ago</small><br>
-                                Running low on space<br><strong>18GB in use</strong> 2GB left<br>
-                                <a href="page_ready_pricing_tables.html" class="btn btn-xs btn-primary"><i class="fa fa-arrow-up"></i> Upgrade Plan</a>
-                            </div>
-                        </div>
-                        <!-- END Activity -->
-
-                        <!-- Messages -->
-                        <a href="page_ready_inbox.html" class="sidebar-title">
-                            <i class="fa fa-envelope pull-right"></i> <strong>Messages</strong>UI (5)
-                        </a>
-                        <div class="sidebar-section">
-                            <div class="alert alert-alt">
-                                Debra Stanley<small class="pull-right">just now</small><br>
-                                <a href="page_ready_inbox_message.html"><strong>New Follower</strong></a>
-                            </div>
-                            <div class="alert alert-alt">
-                                Sarah Cole<small class="pull-right">2 min ago</small><br>
-                                <a href="page_ready_inbox_message.html"><strong>Your subscription was updated</strong></a>
-                            </div>
-                            <div class="alert alert-alt">
-                                Bryan Porter<small class="pull-right">10 min ago</small><br>
-                                <a href="page_ready_inbox_message.html"><strong>A great opportunity</strong></a>
-                            </div>
-                            <div class="alert alert-alt">
-                                Jose Duncan<small class="pull-right">30 min ago</small><br>
-                                <a href="page_ready_inbox_message.html"><strong>Account Activation</strong></a>
-                            </div>
-                            <div class="alert alert-alt">
-                                Henry Ellis<small class="pull-right">40 min ago</small><br>
-                                <a href="page_ready_inbox_message.html"><strong>You reached 10.000 Followers!</strong></a>
-                            </div>
-                        </div>
-                        <!-- END Messages -->
-                    </div>
-                    <!-- END Sidebar Content -->
-                </div>
-                <!-- END Wrapper for scrolling functionality -->
-            </div>
-            <!-- END Alternative Sidebar -->
 
             <!-- Main Sidebar -->
             <div id="sidebar">
@@ -278,7 +104,7 @@
                     <div class="sidebar-content">
                         <!-- Brand -->
                         <a href="index.html" class="sidebar-brand">
-                            <img src="img/icon-blanco.png" alt=""><strong> Flakt</strong> México
+                            <strong> Flakt</strong> <small>Fans</small><img src="img/icon-blanco.png" style="margin-left:15px;" alt="FLAKT">
                         </a>
                         <!-- END Brand -->
 
@@ -306,314 +132,177 @@
                                 <a href="index.html" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i>Dashboard</a>
                             </li>
                             <li class="sidebar-header">
-                                <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a><a href="javascript:void(0)" data-toggle="tooltip" title="Create the most amazing pages with the widget kit!"><i class="gi gi-lightbulb"></i></a></span>
-                                <span class="sidebar-header-title">Widget Kit</span>
+                                <span class="sidebar-header-title">Admin</span>
                             </li>
                             <li>
-                                <a href="page_widgets_stats.html"><i class="gi gi-charts sidebar-nav-icon"></i>Statistics</a>
+                                <a href="#"><i class="gi gi-group sidebar-nav-icon"></i>User</a>
                             </li>
                             <li>
-                                <a href="page_widgets_social.html"><i class="gi gi-share_alt sidebar-nav-icon"></i>Social</a>
+                                <a href="#"><i class="gi gi-building sidebar-nav-icon"></i>Customers</a>
                             </li>
                             <li>
-                                <a href="page_widgets_media.html"><i class="gi gi-film sidebar-nav-icon"></i>Media</a>
+                                <a href="#"><i class="gi gi-saw_blade sidebar-nav-icon"></i>Fans</a>
                             </li>
                             <li>
-                                <a href="page_widgets_links.html"><i class="gi gi-link sidebar-nav-icon"></i>Links</a>
+                                <a href="#"><i class="gi gi-tags sidebar-nav-icon"></i>Accessories</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="gi gi-blog sidebar-nav-icon"></i>Catalogs</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="hi hi-lock sidebar-nav-icon"></i>Request Password</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="gi gi-charts sidebar-nav-icon"></i>Reports</a>
                             </li>
                             <li class="sidebar-header">
-                                <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
-                                <span class="sidebar-header-title">Design Kit</span>
+                                <span class="sidebar-header-title">Fans Family</span>
                             </li>
                             <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-certificate sidebar-nav-icon"></i>User Interface</a>
+                                <a href="#" class="sidebar-nav-menu">
+                                    <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                                    <i class="gi gi-certificate sidebar-nav-icon"></i>Centrifugal
+                                </a>
                                 <ul>
                                     <li>
-                                        <a href="page_ui_grid_blocks.html">Grid &amp; Blocks</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_draggable_blocks.html">Draggable Blocks</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_typography.html">Typography</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_buttons_dropdowns.html">Buttons &amp; Dropdowns</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_navigation_more.html">Navigation &amp; More</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_horizontal_menu.html">Horizontal Menu</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_progress_loading.html">Progress &amp; Loading</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_preloader.html">Page Preloader</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ui_color_themes.html">Color Themes</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-notes_2 sidebar-nav-icon"></i>Forms</a>
-                                <ul>
-                                    <li>
-                                        <a href="page_forms_general.html">General</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_forms_components.html">Components</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_forms_validation.html">Validation</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_forms_wizard.html">Wizard</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-table sidebar-nav-icon"></i>Tables</a>
-                                <ul>
-                                    <li>
-                                        <a href="page_tables_general.html">General</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_tables_responsive.html">Responsive</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_tables_datatables.html">Datatables</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-cup sidebar-nav-icon"></i>Icon Sets</a>
-                                <ul>
-                                    <li>
-                                        <a href="page_icons_fontawesome.html">Font Awesome</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_icons_glyphicons_pro.html">Glyphicons Pro</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-show_big_thumbnails sidebar-nav-icon"></i>Page Layouts</a>
-                                <ul>
-                                    <li>
-                                        <a href="page_layout_static.html">Static</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_fixed_footer.html">Static + Fixed Footer</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_fixed_top.html">Fixed Top Header</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_fixed_top_footer.html">Fixed Top Header + Footer</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_fixed_bottom.html">Fixed Bottom Header</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_fixed_bottom_footer.html">Fixed Bottom Header + Footer</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_main_sidebar_partial.html">Partial Main Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_main_sidebar_visible.html">Visible Main Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_alternative_sidebar_partial.html">Partial Alternative Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_alternative_sidebar_visible.html">Visible Alternative Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_no_sidebars.html">No Sidebars</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_both_partial.html">Both Sidebars Partial</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_layout_static_animated.html">Animated Sidebar Transitions</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="sidebar-header">
-                                <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
-                                <span class="sidebar-header-title">Develop Kit</span>
-                            </li>
-                            <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="fa fa-wrench sidebar-nav-icon"></i>Components</a>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>3 Level Menu</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HA</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Link 1</a>
+                                                <a href="#">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">Link 2</a>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_maps.html">Maps</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HC</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_charts.html">Charts</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HBDD</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_gallery.html">Gallery</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HD</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_carousel.html">Carousel</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>GL</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_calendar.html">Calendar</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>LH</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="page_comp_animations.html">CSS3 Animations</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_comp_syntax_highlighting.html">Syntax Highlighting</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>STDM</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Select</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">More Info</a>
+                                            </li>
+                                            <li>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-brush sidebar-nav-icon"></i>Ready Pages</a>
+                                <a href="#" class="sidebar-nav-menu">
+                                    <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                                    <i class="gi gi-certificate sidebar-nav-icon"></i>Axial
+                                </a>
                                 <ul>
                                     <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Errors</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>FZ</a>
                                         <ul>
                                             <li>
-                                                <a href="page_ready_400.html">400</a>
+                                                <a href="#">Select</a>
                                             </li>
                                             <li>
-                                                <a href="page_ready_401.html">401</a>
+                                                <a href="#">More Info</a>
                                             </li>
                                             <li>
-                                                <a href="page_ready_403.html">403</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_404.html">404</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_500.html">500</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_503.html">503</a>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
                                             </li>
                                         </ul>
                                     </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="sidebar-nav-menu">
+                                    <i class="fa fa-angle-left sidebar-nav-indicator"></i>
+                                    <i class="gi gi-certificate sidebar-nav-icon"></i>RGML
+                                </a>
+                                <ul>
                                     <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Get Started</a>
+                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>RGML</a>
                                         <ul>
                                             <li>
-                                                <a href="page_ready_blank.html">Blank</a>
+                                                <a href="#">Select</a>
                                             </li>
                                             <li>
-                                                <a href="page_ready_blank_alt.html">Blank Alternative</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_search_results.html">Search Results (4)</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_article.html">Article</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_user_profile.html">User Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_contacts.html">Contacts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>e-Learning</a>
-                                        <ul>
-                                            <li>
-                                                <a href="page_ready_elearning_courses.html">Courses</a>
+                                                <a href="#">More Info</a>
                                             </li>
                                             <li>
-                                                <a href="page_ready_elearning_course_lessons.html">Course - Lessons</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_elearning_course_lesson.html">Course - Lesson Page</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Message Center</a>
-                                        <ul>
-                                            <li>
-                                                <a href="page_ready_inbox.html">Inbox</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_inbox_compose.html">Compose Message</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_inbox_message.html">View Message</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_chat.html">Chat</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_timeline.html">Timeline</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_tickets.html">Tickets</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_tasks.html">Tasks</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_faq.html">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_pricing_tables.html">Pricing Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_invoice.html">Invoice</a>
-                                    </li>
-                                    <li>
-                                        <a href="page_ready_forum.html">Forum (3)</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Login, Register &amp; Lock</a>
-                                        <ul>
-                                            <li>
-                                                <a href="login.html">Login</a>
-                                            </li>
-                                            <li>
-                                                <a href="login_full.html">Login (Full Background)</a>
-                                            </li>
-                                            <li>
-                                                <a href="login_alt.html">Login 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="login.html#reminder">Password Reminder</a>
-                                            </li>
-                                            <li>
-                                                <a href="login_alt.html#reminder">Password Reminder 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="login.html#register">Register</a>
-                                            </li>
-                                            <li>
-                                                <a href="login_alt.html#register">Register 2</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_lock_screen.html">Lock Screen</a>
-                                            </li>
-                                            <li>
-                                                <a href="page_ready_lock_screen_alt.html">Lock Screen 2</a>
+                                                <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
                                             </li>
                                         </ul>
                                     </li>
@@ -667,44 +356,13 @@
 
                     <!-- Right Header Navigation -->
                     <ul class="nav navbar-nav-custom pull-right">
-                        <!-- Alternative Sidebar Toggle Button -->
-                        <li>
-                            <!-- If you do not want the main sidebar to open when the alternative sidebar is closed, just remove the second parameter: App.sidebar('toggle-sidebar-alt'); -->
-                            <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar-alt', 'toggle-other');">
-                                <i class="gi gi-share_alt"></i>
-                                <span class="label label-primary label-indicator animation-floating">4</span>
-                            </a>
-                        </li>
-                        <!-- END Alternative Sidebar Toggle Button -->
-
                         <!-- User Dropdown -->
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
+                                <img src="img/placeholders/avatars/avatarPersona.jpg" alt="avatar"> <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                                 <li class="dropdown-header text-center">Account</li>
-                                <li>
-                                    <a href="page_ready_timeline.html">
-                                        <i class="fa fa-clock-o fa-fw pull-right"></i>
-                                        <span class="badge pull-right">10</span>
-                                        Updates
-                                    </a>
-                                    <a href="page_ready_inbox.html">
-                                        <i class="fa fa-envelope-o fa-fw pull-right"></i>
-                                        <span class="badge pull-right">5</span>
-                                        Messages
-                                    </a>
-                                    <a href="page_ready_pricing_tables.html"><i class="fa fa-magnet fa-fw pull-right"></i>
-                                        <span class="badge pull-right">3</span>
-                                        Subscriptions
-                                    </a>
-                                    <a href="page_ready_faq.html"><i class="fa fa-question fa-fw pull-right"></i>
-                                        <span class="badge pull-right">11</span>
-                                        FAQ
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
                                 <li>
                                     <a href="page_ready_user_profile.html">
                                         <i class="fa fa-user fa-fw pull-right"></i>
@@ -721,25 +379,6 @@
                                     <a href="page_ready_lock_screen.html"><i class="fa fa-lock fa-fw pull-right"></i> Lock Account</a>
                                     <a href="login.html"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
                                 </li>
-                                <li class="dropdown-header text-center">Activity</li>
-                                <li>
-                                    <div class="alert alert-success alert-alt">
-                                        <small>5 min ago</small><br>
-                                        <i class="fa fa-thumbs-up fa-fw"></i> You had a new sale ($10)
-                                    </div>
-                                    <div class="alert alert-info alert-alt">
-                                        <small>10 min ago</small><br>
-                                        <i class="fa fa-arrow-up fa-fw"></i> Upgraded to Pro plan
-                                    </div>
-                                    <div class="alert alert-warning alert-alt">
-                                        <small>3 hours ago</small><br>
-                                        <i class="fa fa-exclamation fa-fw"></i> Running low on space<br><strong>18GB in use</strong> 2GB left
-                                    </div>
-                                    <div class="alert alert-danger alert-alt">
-                                        <small>Yesterday</small><br>
-                                        <i class="fa fa-bug fa-fw"></i> <a href="javascript:void(0)" class="alert-link">New bug submitted</a>
-                                    </div>
-                                </li>
                             </ul>
                         </li>
                         <!-- END User Dropdown -->
@@ -754,7 +393,9 @@
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi gi-dashboard"></i>Bienvenido <strong>Eduardo Martínez</strong><br><small>Dashboard</small>
+                                <i class="gi gi-stopwatch"></i>Bienvenido <strong>Eduardo Martínez</strong>
+                                <br>
+                                <small>Dashboard</small>
                             </h1>
                         </div>
                     </div>
@@ -762,122 +403,163 @@
 
                     <!-- Mini Top Stats Row -->
                     <div class="row">
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-autumn animation-fadeIn">
-                                        <i class="fa fa-file-text"></i>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="widget">
+                                        <div class="widget-extra themed-background-dark">
+                                            <h3 class="widget-content-light">
+                                                Start <strong>Selection</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="widget-extra-full">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple themed-background-dark">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-magic"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Wizard <strong>Selection</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple themed-background-dark">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-list"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                View <strong>Resume</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        New <strong>Article</strong><br>
-                                        <small>Mountain Trip</small>
-                                    </h3>
                                 </div>
-                            </a>
-                            <!-- END Widget -->
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                        <i class="gi gi-usd"></i>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="widget">
+                                        <div class="widget-extra themed-background-dark">
+                                            <h3 class="widget-content-light">
+                                                Your <strong>Admin</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="widget-extra-full">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="fa fa-file-text"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Admin <strong>Users</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="fa fa-file-text"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Admin <strong>Customers</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-usd"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Admin <strong>Fans</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-envelope"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Admin <strong>Accessories</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-envelope"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Admin <strong>Catalogs</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <!-- Widget -->
+                                                    <a href="page_comp_charts.html" class="widget widget-hover-effect1">
+                                                        <div class="widget-simple bordeVerde">
+                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
+                                                                <i class="gi gi-usd"></i>
+                                                            </div>
+                                                            <h3 class="widget-content text-right animation-pullDown">
+                                                                Request <strong>Password</strong>
+                                                            </h3>
+                                                        </div>
+                                                    </a>
+                                                    <!-- END Widget -->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        + <strong>250%</strong><br>
-                                        <small>Sales Today</small>
-                                    </h3>
                                 </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-fire animation-fadeIn">
-                                        <i class="gi gi-envelope"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        5 <strong>Messages</strong>
-                                        <small>Support Center</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-amethyst animation-fadeIn">
-                                        <i class="gi gi-picture"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        +30 <strong>Photos</strong>
-                                        <small>Gallery</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- Widget -->
-                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                        <i class="gi gi-wallet"></i>
-                                    </div>
-                                    <div class="pull-right">
-                                        <!-- Jquery Sparkline (initialized in js/pages/index.js), for more examples you can check out http://omnipotent.net/jquery.sparkline/#s-about -->
-                                        <span id="mini-chart-sales"></span>
-                                    </div>
-                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                        Latest <strong>Sales</strong>
-                                        <small>Per hour</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- Widget -->
-                            <a href="page_widgets_stats.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                        <i class="gi gi-crown"></i>
-                                    </div>
-                                    <div class="pull-right">
-                                        <!-- Jquery Sparkline (initialized in js/pages/index.js), for more examples you can check out http://omnipotent.net/jquery.sparkline/#s-about -->
-                                        <span id="mini-chart-brand"></span>
-                                    </div>
-                                    <h3 class="widget-content animation-pullDown visible-lg">
-                                        Our <strong>Brand</strong>
-                                        <small>Popularity over time</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
+                            </div>
                         </div>
                     </div>
                     <!-- END Mini Top Stats Row -->
 
                     <!-- Widgets Row -->
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- Timeline Widget -->
                             <div class="widget">
                                 <div class="widget-extra themed-background-dark">
-                                    <div class="widget-options">
-                                        <div class="btn-group btn-group-xs">
-                                            <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip" title="Edit Widget"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip" title="Quick Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                    </div>
                                     <h3 class="widget-content-light">
-                                        Latest <strong>News</strong>
-                                        <small><a href="page_ready_timeline.html"><strong>View all</strong></a></small>
+                                        Latest <strong>Users Log</strong>
                                     </h3>
                                 </div>
                                 <div class="widget-extra">
@@ -885,77 +567,88 @@
                                     <div class="timeline">
                                         <ul class="timeline-list">
                                             <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-airplane"></i></div>
-                                                <div class="timeline-time"><small>just now</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 1</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Jordan Carter</strong></a></p>
-                                                    <p class="push-bit">The trip was an amazing and a life changing experience!!</p>
-                                                    <p class="push-bit"><a href="page_ready_article.html" class="btn btn-xs btn-primary"><i class="fa fa-file"></i> Read the article</a></p>
-                                                    <div class="row push">
-                                                        <div class="col-sm-6 col-md-4">
-                                                            <a href="img/placeholders/photos/photo1.jpg" data-toggle="lightbox-image">
-                                                                <img src="img/placeholders/photos/photo1.jpg" alt="image">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-sm-6 col-md-4">
-                                                            <a href="img/placeholders/photos/photo22.jpg" data-toggle="lightbox-image">
-                                                                <img src="img/placeholders/photos/photo22.jpg" alt="image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                                    <p class="push-bit"><a href="#"><strong>Eduardo Martínez</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="active">
-                                                <div class="timeline-icon themed-background-fire themed-border-fire"><i class="fa fa-file-text"></i></div>
-                                                <div class="timeline-time"><small>5 min ago</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 2</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Administrator</strong></a></p>
-                                                    <strong>Free courses</strong> for all our customers at A1 Conference Room - 9:00 <strong>am</strong> tomorrow!
+                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-drink"></i></div>
-                                                <div class="timeline-time"><small>3 hours ago</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 3</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Ella Winter</strong></a></p>
-                                                    <p class="push-bit"><strong>Happy Hour!</strong> Free drinks at <a href="javascript:void(0)">Cafe-Bar</a> all day long!</p>
-                                                    <div id="gmap-timeline" class="gmap"></div>
+                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="active">
-                                                <div class="timeline-icon"><i class="fa fa-cutlery"></i></div>
-                                                <div class="timeline-time"><small>yesterday</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 4</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Patricia Woods</strong></a></p>
-                                                    <p class="push-bit">Today I had the lunch of my life! It was delicious!</p>
-                                                    <div class="row push">
-                                                        <div class="col-sm-6 col-md-4">
-                                                            <a href="img/placeholders/photos/photo23.jpg" data-toggle="lightbox-image">
-                                                                <img src="img/placeholders/photos/photo23.jpg" alt="image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="active">
-                                                <div class="timeline-icon themed-background-fire themed-border-fire"><i class="fa fa-smile-o"></i></div>
-                                                <div class="timeline-time"><small>2 days ago</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 5</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Administrator</strong></a></p>
-                                                    To thank you all for your support we would like to let you know that you will receive free feature updates for life! You are awesome!
+                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
                                             </li>
                                             <li class="active">
-                                                <div class="timeline-icon"><i class="fa fa-pencil"></i></div>
-                                                <div class="timeline-time"><small>1 week ago</small></div>
+                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
+                                                <div class="timeline-time"><small># 6</small></div>
                                                 <div class="timeline-content">
-                                                    <p class="push-bit"><a href="page_ready_user_profile.html"><strong>Nicole Ward</strong></a></p>
-                                                    <p class="push-bit">Consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus scelerisque vulputate.</p>
-                                                    Integer sed dolor erat. Fusce erat ipsum, varius vel euismod sed, tristique et lectus? Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque? Proin rhoncus dui at ligula vestibulum ut facilisis ante sodales! Suspendisse potenti. Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula ipsum.
+                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
+                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
+                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
+                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
+                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
+                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
+                                                        <i class="gi gi-eye_open"></i> View All</a>
+                                                    </p>
                                                 </div>
-                                            </li>
-                                            <li class="text-center">
-                                                <a href="javascript:void(0)" class="btn btn-xs btn-default">View more..</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -964,182 +657,203 @@
                             </div>
                             <!-- END Timeline Widget -->
                         </div>
-                        <div class="col-md-6">
-                            <!-- Your Plan Widget -->
+                        <div class="col-md-8">
+                            <!-- Your Selection -->
                             <div class="widget">
                                 <div class="widget-extra themed-background-dark">
-                                    <div class="widget-options">
-                                        <div class="btn-group btn-group-xs">
-                                            <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip" title="Edit Widget"><i class="fa fa-pencil"></i></a>
-                                            <a href="javascript:void(0)" class="btn btn-default" data-toggle="tooltip" title="Quick Settings"><i class="fa fa-cog"></i></a>
-                                        </div>
-                                    </div>
                                     <h3 class="widget-content-light">
-                                        Your <strong>VIP Plan</strong>
-                                        <small><a href="page_ready_pricing_tables.html"><strong>Upgrade</strong></a></small>
+                                        My <strong>Selections</strong>
                                     </h3>
                                 </div>
                                 <div class="widget-extra-full">
-                                    <div class="row text-center">
-                                        <div class="col-xs-6 col-lg-3">
-                                            <h3>
-                                                <strong>35</strong> <small>/50</small><br>
-                                                <small><i class="fa fa-folder-open-o"></i> Projects</small>
-                                            </h3>
-                                        </div>
-                                        <div class="col-xs-6 col-lg-3">
-                                            <h3>
-                                                <strong>25</strong> <small>/100GB</small><br>
-                                                <small><i class="fa fa-hdd-o"></i> Storage</small>
-                                            </h3>
-                                        </div>
-                                        <div class="col-xs-6 col-lg-3">
-                                            <h3>
-                                                <strong>65</strong> <small>/1k</small><br>
-                                                <small><i class="fa fa-building-o"></i> Clients</small>
-                                            </h3>
-                                        </div>
-                                        <div class="col-xs-6 col-lg-3">
-                                            <h3>
-                                                <strong>10</strong> <small>k</small><br>
-                                                <small><i class="fa fa-envelope-o"></i> Emails</small>
-                                            </h3>
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="table table-vcenter table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">#</th>
+                                                        <th>Date</th>
+                                                        <th>Customer</th>
+                                                        <th>Reference</th>
+                                                        <th>Fan Type</th>
+                                                        <th>Fan Size</th>
+                                                        <th style="width: 150px;" class="text-center">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">02</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">03</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">04</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">05</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- END Your Plan Widget -->
-
-                            <!-- Charts Widget -->
+                            <!-- END Your Selection -->
+                            <!-- Your Selection -->
                             <div class="widget">
-                                <div class="widget-advanced widget-advanced-alt">
-                                    <!-- Widget Header -->
-                                    <div class="widget-header text-center themed-background">
-                                        <h3 class="widget-content-light text-left pull-left animation-pullDown">
-                                            <strong>Sales</strong> &amp; <strong>Earnings</strong><br>
-                                            <small>Last Year</small>
-                                        </h3>
-                                        <!-- Flot Charts (initialized in js/pages/index.js), for more examples you can check out http://www.flotcharts.org/ -->
-                                        <div id="dash-widget-chart" class="chart"></div>
-                                    </div>
-                                    <!-- END Widget Header -->
-
-                                    <!-- Widget Main -->
-                                    <div class="widget-main">
-                                        <div class="row text-center">
-                                            <div class="col-xs-4">
-                                                <h3 class="animation-hatch"><strong>7.500</strong><br><small>Clients</small></h3>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <h3 class="animation-hatch"><strong>10.970</strong><br><small>Sales</small></h3>
-                                            </div>
-                                            <div class="col-xs-4">
-                                                <h3 class="animation-hatch">$<strong>31.230</strong><br><small>Earnings</small></h3>
-                                            </div>
+                                <div class="widget-extra themed-background-dark">
+                                    <h3 class="widget-content-light">
+                                        All <strong>Selections</strong>
+                                    </h3>
+                                </div>
+                                <div class="widget-extra-full">
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="table table-vcenter table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">#</th>
+                                                        <th>Date</th>
+                                                        <th>Customer</th>
+                                                        <th>User</th>
+                                                        <th>Reference</th>
+                                                        <th>Fan Type</th>
+                                                        <th>Fan Size</th>
+                                                        <th style="width: 150px;" class="text-center">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">01</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>Nombre Apellido</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">02</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>Nombre Apellido</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">03</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Nombre Apellido</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">04</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Nombre Apellido</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">05</td>
+                                                        <td>01-01-2015</td>
+                                                        <td>Nombre Apellido</td>
+                                                        <td>Cementos de México</td>
+                                                        <td>10000112 M11223</td>
+                                                        <td>HCGB</td>
+                                                        <td>40</td>
+                                                        <td class="text-center">
+                                                            <div class="btn-group btn-group-xs">
+                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    <!-- END Widget Main -->
                                 </div>
                             </div>
-                            <!-- END Charts Widget -->
-
-                            <!-- Weather Widget -->
-                            <div class="widget">
-                                <div class="widget-advanced widget-advanced-alt">
-                                    <!-- Widget Header -->
-                                    <div class="widget-header text-left">
-                                        <!-- For best results use an image with at least 150 pixels in height (with the width relative to how big your widget will be!) - Here I'm using a 1200x150 pixels image -->
-                                        <img src="img/placeholders/headers/widget5_header.jpg" alt="background" class="widget-background animation-pulseSlow">
-                                        <h3 class="widget-content widget-content-image widget-content-light clearfix">
-                                            <span class="widget-icon pull-right">
-                                                <i class="fa fa-sun-o animation-pulse"></i>
-                                            </span>
-                                            Weather <strong>Station</strong><br>
-                                            <small><i class="fa fa-location-arrow"></i> The Mountain</small>
-                                        </h3>
-                                    </div>
-                                    <!-- END Widget Header -->
-
-                                    <!-- Widget Main -->
-                                    <div class="widget-main">
-                                        <div class="row text-center">
-                                            <div class="col-xs-6 col-lg-3">
-                                                <h3>
-                                                    <strong>10&deg;</strong> <small>C</small><br>
-                                                    <small>Sunny</small>
-                                                </h3>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3">
-                                                <h3>
-                                                    <strong>80</strong> <small>%</small><br>
-                                                    <small>Humidity</small>
-                                                </h3>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3">
-                                                <h3>
-                                                    <strong>60</strong> <small>km/h</small><br>
-                                                    <small>Wind</small>
-                                                </h3>
-                                            </div>
-                                            <div class="col-xs-6 col-lg-3">
-                                                <h3>
-                                                    <strong>5</strong> <small>km</small><br>
-                                                    <small>Visibility</small>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Widget Main -->
-                                </div>
-                            </div>
-                            <!-- END Weather Widget-->
-
-                            <!-- Advanced Gallery Widget -->
-                            <div class="widget">
-                                <div class="widget-advanced">
-                                    <!-- Widget Header -->
-                                    <div class="widget-header text-center themed-background-dark">
-                                        <h3 class="widget-content-light clearfix">
-                                            Awesome <strong>Gallery</strong><br>
-                                            <small>4 Photos</small>
-                                        </h3>
-                                    </div>
-                                    <!-- END Widget Header -->
-
-                                    <!-- Widget Main -->
-                                    <div class="widget-main">
-                                        <a href="page_comp_gallery.html" class="widget-image-container">
-                                            <span class="widget-icon themed-background"><i class="gi gi-picture"></i></span>
-                                        </a>
-                                        <div class="gallery gallery-widget" data-toggle="lightbox-gallery">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-3">
-                                                    <a href="img/placeholders/photos/photo15.jpg" class="gallery-link" title="Image Info">
-                                                        <img src="img/placeholders/photos/photo15.jpg" alt="image">
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-3">
-                                                    <a href="img/placeholders/photos/photo5.jpg" class="gallery-link" title="Image Info">
-                                                        <img src="img/placeholders/photos/photo5.jpg" alt="image">
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-3">
-                                                    <a href="img/placeholders/photos/photo6.jpg" class="gallery-link" title="Image Info">
-                                                        <img src="img/placeholders/photos/photo6.jpg" alt="image">
-                                                    </a>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-3">
-                                                    <a href="img/placeholders/photos/photo13.jpg" class="gallery-link" title="Image Info">
-                                                        <img src="img/placeholders/photos/photo13.jpg" alt="image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END Widget Main -->
-                                </div>
-                            </div>
-                            <!-- END Advanced Gallery Widget -->
+                            <!-- END Your Selection -->
                         </div>
                     </div>
                     <!-- END Widgets Row -->
@@ -1148,11 +862,8 @@
 
                 <!-- Footer -->
                 <footer class="clearfix">
-                    <div class="pull-right">
-                        Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">pixelcave</a>
-                    </div>
                     <div class="pull-left">
-                        <span id="year-copy"></span> &copy; <a href="http://goo.gl/TDOSuC" target="_blank">ProUI 2.1</a>
+                        <span id="">2015</span> &copy; <a href="http://goo.gl/TDOSuC" target="_blank">Flakt México Fans</a>
                     </div>
                 </footer>
                 <!-- END Footer -->
@@ -1242,12 +953,5 @@
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
 
-        <!-- Google Maps API + Gmaps Plugin, must be loaded in the page you would like to use maps (Remove 'http:' if you have SSL) -->
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/helpers/gmaps.min.js"></script>
-
-        <!-- Load and execute javascript code used only in this page -->
-        <script src="js/pages/index.js"></script>
-        <script>$(function(){ Index.init(); });</script>
     </body>
 </html>
