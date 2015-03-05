@@ -385,13 +385,353 @@
                     <div class="content-header">
                         <div class="header-section">
                             <h1>
-                                <i class="gi gi-stopwatch"></i>Bienvenido <strong>Eduardo Martínez</strong>
+                                <i class="gi gi-stopwatch"></i>Selection <strong>Resume</strong>
                                 <br>
-                                <small>Dashboard</small>
+                                <small>Blade type: <span>B</span></small>
                             </h1>
                         </div>
                     </div>
                     <!-- END Dashboard Header -->
+                    
+                    <!-- Options Indata -->
+                    <div class="row">
+                        <div class="col-md-2 text-center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="widget">
+                                        <div class="widget-extra themed-background-dark">
+                                            <h3 class="widget-content-light">
+                                                <strong>Options</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="widget-extra-full">
+                                            <div class="row">
+                                                <div class="btn-group btn-group-lg">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="Return To Wizard">
+                                                        <i class="gi gi-left_arrow"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="General Info">
+                                                        <i class="gi gi-circle_exclamation_mark"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="List Result">
+                                                        <i class="gi gi-list"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="btn-group btn-group-lg">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="Sketch">
+                                                        <i class="gi gi-picture"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="Technical Info">
+                                                        <i class="gi gi-circle_info"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="bottom" title="IVC">
+                                                        <i class="gi gi-notes_2"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="btn-group btn-group-lg">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="bottom" title="Price">
+                                                        <i class="gi gi-usd"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="bottom" title="Full Cost">
+                                                        <i class="gi gi-money"></i>
+                                                    </button>
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="bottom" title="Print">
+                                                        <i class="gi gi-print"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="widget">
+                                        <div class="widget-extra themed-background-dark">
+                                            <h3 class="widget-content-light">
+                                                <strong>Indata</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="widget-extra-full">
+                                            <div class="row">
+                                                <div class="table-responsive">
+                                                    <table class="table table-condensed">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th style="width: 10%;">Departure</th>
+                                                                <th style="width: 15%;">Flow</th>
+                                                                <th style="width: 15%;">Inlet Pressure</th>
+                                                                <th style="width: 15%;">Outlet Pressure</th>
+                                                                <th style="width: 15%;">Temp</th>
+                                                                <th style="width: 15%;">Cold Start Up</th>
+                                                                <th style="width: 15%;">Density Normal</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtDeparture" class="form-control input-sm" placeholder="#">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtFlow" class="form-control input-sm">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">m3/h</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtInletPressure" class="form-control input-sm">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">Pa</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtOutl5tPressure" class="form-control input-sm">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">Pa</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtOutl5tPressure" class="form-control input-sm">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">C°</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtOutl5tPressure" class="form-control input-sm">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">C°</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="input-group">
+                                                                        <input type="text" id="txtOutl5tPressure" class="form-control input-sm" value="1.273">
+                                                                        <span class="input-group-addon" style="font-size: 10px;">Kg/nm3</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="7" class="text-center">
+                                                                    <div class="btn-group btn-group-md">
+                                                                        <button class="btn btn-alt btn-primary">
+                                                                            <i class="gi gi-search"></i> Search
+                                                                        </button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Options Indata -->
+                    
+                    <!-- List Result -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Interactive Block -->
+                            <div class="block">
+                                <!-- Interactive Title -->
+                                <div class="block-title">
+                                    <!-- Interactive block controls (initialized in js/app.js -> interactiveBlocks()) -->
+                                    <div class="block-options pull-right">
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-content"><i class="fa fa-arrows-v"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-fullscreen"><i class="fa fa-desktop"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-hide"><i class="fa fa-times"></i></a>
+                                    </div>
+                                    <h2>List <strong>Result</strong></h2>
+                                </div>
+                                <!-- END Interactive Title -->
+
+                                <!-- Interactive Content -->
+                                <!-- The content you will put inside div.block-content, will be toggled -->
+                                <div class="block-content">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+                                            <thead>
+                                                <tr class="text-primary">
+                                                    <th>S</th>
+                                                    <th>Inlet</th>
+                                                    <th>Oulet</th>
+                                                    <th>Value</th>
+                                                    <th>Image</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>IVC</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="ivcIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="ivcOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.3</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/ivc.jpg" style="width:40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DMBG</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="ivcOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="dmbgOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.2</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/difusor.jpg" style="width:40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Flexible</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="flexibleIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="flexibleOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/flexible.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Screen</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="screenIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="screenOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.2</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/screen.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Damper</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="damperIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="damperOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/damper.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Diffusor Default</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="diffusorIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="diffusorOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/diffusor.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Louver</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="louverIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="louverOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.15</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/louver.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Silencer</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="silencerIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="silencerOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.15</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/silencer.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Inlet Box</td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="inletBoxIn_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <label class="switch switch-primary">
+                                                            <input type="checkbox" id="inletBoxOut_1"><span></span>
+                                                        </label>
+                                                    </td>
+                                                    <td>0.15</td>
+                                                    <td>
+                                                        <img src="img/placeholders/accessories/inletbox.jpg" style="width: 40px; height:40px;">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <p class="text-muted">Selection Result..</p>
+                                <!-- END Interactive Content -->
+                            </div>
+                            <!-- END Interactive Block -->
+                        </div>
+                    </div>
+                    <!-- End List Result -->
 
                     <!-- Mini Top Stats Row -->
                     <div class="row">
