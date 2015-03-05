@@ -129,31 +129,31 @@
                         <!-- Sidebar Navigation -->
                         <ul class="sidebar-nav">
                             <li>
-                                <a href="index.html" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i>Dashboard</a>
+                                <a href="index.html" class="submenu"><i class="gi gi-stopwatch sidebar-nav-icon"></i>Dashboard</a>
                             </li>
                             <li class="sidebar-header">
                                 <span class="sidebar-header-title">Admin</span>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-group sidebar-nav-icon"></i>User</a>
+                                <a href="#" class="submenu"><i class="gi gi-group sidebar-nav-icon"></i>User</a>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-building sidebar-nav-icon"></i>Customers</a>
+                                <a href="#" class="submenu"><i class="gi gi-building sidebar-nav-icon"></i>Customers</a>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-saw_blade sidebar-nav-icon"></i>Fans</a>
+                                <a href="#" class="submenu"><i class="gi gi-saw_blade sidebar-nav-icon"></i>Fans</a>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-tags sidebar-nav-icon"></i>Accessories</a>
+                                <a href="#" class="submenu"><i class="gi gi-tags sidebar-nav-icon"></i>Accessories</a>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-blog sidebar-nav-icon"></i>Catalogs</a>
+                                <a href="#" class="submenu"><i class="gi gi-blog sidebar-nav-icon"></i>Catalogs</a>
                             </li>
                             <li>
-                                <a href="#"><i class="hi hi-lock sidebar-nav-icon"></i>Request Password</a>
+                                <a href="#" class="submenu"><i class="hi hi-lock sidebar-nav-icon"></i>Request Password</a>
                             </li>
                             <li>
-                                <a href="#"><i class="gi gi-charts sidebar-nav-icon"></i>Reports</a>
+                                <a href="#" class="submenu"><i class="gi gi-charts sidebar-nav-icon"></i>Reports</a>
                             </li>
                             <li class="sidebar-header">
                                 <span class="sidebar-header-title">Fans Family</span>
@@ -168,10 +168,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HA</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -182,10 +182,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HC</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -196,10 +196,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HBDD</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -210,10 +210,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>HD</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -224,10 +224,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>GL</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -238,10 +238,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>LH</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -252,10 +252,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>STDM</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -274,10 +274,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>FZ</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -296,10 +296,10 @@
                                         <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>RGML</a>
                                         <ul>
                                             <li>
-                                                <a href="#">Select</a>
+                                                <a href="#" class="submenu">Select</a>
                                             </li>
                                             <li>
-                                                <a href="#">More Info</a>
+                                                <a href="#" class="submenu">More Info</a>
                                             </li>
                                             <li>
                                                 <img src="img/placeholders/photos/photo24.jpg" style="width:200px;" alt="">
@@ -952,6 +952,15 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/app.js"></script>
-
+        <script>
+            //Mostrar que link del menu esta activo
+            $('.submenu').on('click',function(){
+                $('.sidebar-nav').find('li, a').removeClass('active open');
+                $('.sidebar-nav').find('ul').css({ display: 'none' });
+                $(this).addClass('active');
+                $(this).parent().parent().parent().addClass('active');
+                $(this).parent().parent().css({ display: 'block' });
+            });
+        </script>
     </body>
 </html>
