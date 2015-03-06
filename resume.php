@@ -413,20 +413,20 @@
                                                     <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="General Info">
                                                         <i class="gi gi-circle_exclamation_mark"></i>
                                                     </button>
-                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="List Result">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="List Result" onclick="$('.block').show()">
                                                         <i class="gi gi-list"></i>
                                                     </button>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="btn-group btn-group-lg">
-                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="Sketch">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="left" title="Sketch">
                                                         <i class="gi gi-picture"></i>
                                                     </button>
                                                     <button class="btn btn-alt btn-primary" data-toggle="tooltip" title="Technical Info">
                                                         <i class="gi gi-circle_info"></i>
                                                     </button>
-                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="bottom" title="IVC">
+                                                    <button class="btn btn-alt btn-primary" data-toggle="tooltip" data-placement="right" title="IVC">
                                                         <i class="gi gi-notes_2"></i>
                                                     </button>
                                                 </div>
@@ -557,169 +557,95 @@
                                 <!-- The content you will put inside div.block-content, will be toggled -->
                                 <div class="block-content">
                                     <div class="table-responsive">
-                                        <table class="table table-condensed">
+                                        <table class="table table-borderless table-condensed">
                                             <thead>
                                                 <tr class="text-primary">
-                                                    <th>S</th>
-                                                    <th>Inlet</th>
-                                                    <th>Oulet</th>
-                                                    <th>Value</th>
-                                                    <th>Image</th>
+                                                    <th>Select</th>
+                                                    <th>No</th>
+                                                    <th>Type</th>
+                                                    <th>Size</th>
+                                                    <th>Eff</th>
+                                                    <th>RPM</th>
+                                                    <th>HP</th>
+                                                    <th>Pressure rice</th>
+                                                    <th class="text-center success">Work line</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>IVC</td>
                                                     <td>
                                                         <label class="switch switch-primary">
                                                             <input type="checkbox" id="ivcIn_1"><span></span>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="ivcOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.3</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/ivc.jpg" style="width:40px; height:40px;">
-                                                    </td>
+                                                    <td>10</td>
+                                                    <td>HCGB</td>
+                                                    <td>140</td>
+                                                    <td>76.2</td>
+                                                    <td>791</td>
+                                                    <td>49.58</td>
+                                                    <td>1127.3</td>
+                                                    <td class="text-center success">3.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>DMBG</td>
                                                     <td>
                                                         <label class="switch switch-primary">
-                                                            <input type="checkbox" id="ivcOut_1"><span></span>
+                                                            <input type="checkbox" id="ivcIn_1"><span></span>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="dmbgOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.2</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/difusor.jpg" style="width:40px; height:40px;">
-                                                    </td>
+                                                    <td>10</td>
+                                                    <td>HCGB</td>
+                                                    <td>140</td>
+                                                    <td>76.2</td>
+                                                    <td>791</td>
+                                                    <td>49.58</td>
+                                                    <td>1127.3</td>
+                                                    <td class="text-center success">3.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Flexible</td>
                                                     <td>
                                                         <label class="switch switch-primary">
-                                                            <input type="checkbox" id="flexibleIn_1"><span></span>
+                                                            <input type="checkbox" id="ivcIn_1"><span></span>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="flexibleOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/flexible.jpg" style="width: 40px; height:40px;">
-                                                    </td>
+                                                    <td>10</td>
+                                                    <td>HCGB</td>
+                                                    <td>140</td>
+                                                    <td>76.2</td>
+                                                    <td>791</td>
+                                                    <td>49.58</td>
+                                                    <td>1127.3</td>
+                                                    <td class="text-center success">3.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Screen</td>
                                                     <td>
                                                         <label class="switch switch-primary">
-                                                            <input type="checkbox" id="screenIn_1"><span></span>
+                                                            <input type="checkbox" id="ivcIn_1"><span></span>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="screenOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.2</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/screen.jpg" style="width: 40px; height:40px;">
-                                                    </td>
+                                                    <td>10</td>
+                                                    <td>HCGB</td>
+                                                    <td>140</td>
+                                                    <td>76.2</td>
+                                                    <td>791</td>
+                                                    <td>49.58</td>
+                                                    <td>1127.3</td>
+                                                    <td class="text-center success">3.2</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Damper</td>
                                                     <td>
                                                         <label class="switch switch-primary">
-                                                            <input type="checkbox" id="damperIn_1"><span></span>
+                                                            <input type="checkbox" id="ivcIn_1"><span></span>
                                                         </label>
                                                     </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="damperOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/damper.jpg" style="width: 40px; height:40px;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Diffusor Default</td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="diffusorIn_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="diffusorOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/diffusor.jpg" style="width: 40px; height:40px;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Louver</td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="louverIn_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="louverOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.15</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/louver.jpg" style="width: 40px; height:40px;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Silencer</td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="silencerIn_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="silencerOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.15</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/silencer.jpg" style="width: 40px; height:40px;">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Inlet Box</td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="inletBoxIn_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch switch-primary">
-                                                            <input type="checkbox" id="inletBoxOut_1"><span></span>
-                                                        </label>
-                                                    </td>
-                                                    <td>0.15</td>
-                                                    <td>
-                                                        <img src="img/placeholders/accessories/inletbox.jpg" style="width: 40px; height:40px;">
-                                                    </td>
+                                                    <td>10</td>
+                                                    <td>HCGB</td>
+                                                    <td>140</td>
+                                                    <td>76.2</td>
+                                                    <td>791</td>
+                                                    <td>49.58</td>
+                                                    <td>1127.3</td>
+                                                    <td class="text-center success">3.2</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -733,462 +659,295 @@
                     </div>
                     <!-- End List Result -->
 
-                    <!-- Mini Top Stats Row -->
+                    <!-- Selected Fan -->
                     <div class="row">
+                        <!-- Data Fan -->
                         <div class="col-md-4">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="widget">
-                                        <div class="widget-extra themed-background-dark">
-                                            <h3 class="widget-content-light">
-                                                Start <strong>Selection</strong>
-                                            </h3>
-                                        </div>
-                                        <div class="widget-extra-full">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple themed-background-dark">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-magic"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Wizard <strong>Selection</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple themed-background-dark">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-list"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                View <strong>Resume</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                            </div>
-                                        </div>
+                            <!-- Interactive Block -->
+                            <div class="block">
+                                <!-- Interactive Title -->
+                                <div class="block-title">
+                                    <!-- Interactive block controls (initialized in js/app.js -> interactiveBlocks()) -->
+                                    <div class="block-options pull-right">
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-content"><i class="fa fa-arrows-v"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-fullscreen"><i class="fa fa-desktop"></i></a>
                                     </div>
+                                    <h2>Selected <strong>Fan</strong></h2>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="widget">
-                                        <div class="widget-extra themed-background-dark">
-                                            <h3 class="widget-content-light">
-                                                Your <strong>Admin</strong>
-                                            </h3>
-                                        </div>
-                                        <div class="widget-extra-full">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="fa fa-file-text"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Admin <strong>Users</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="fa fa-file-text"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Admin <strong>Customers</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-usd"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Admin <strong>Fans</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-envelope"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Admin <strong>Accessories</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-envelope"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Admin <strong>Catalogs</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <!-- Widget -->
-                                                    <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                                        <div class="widget-simple bordeVerde">
-                                                            <div class="widget-icon pull-left themed-background animation-fadeIn">
-                                                                <i class="gi gi-usd"></i>
-                                                            </div>
-                                                            <h3 class="widget-content text-right animation-pullDown">
-                                                                Request <strong>Password</strong>
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <!-- END Widget -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Mini Top Stats Row -->
+                                <!-- END Interactive Title -->
 
-                    <!-- Widgets Row -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- Timeline Widget -->
-                            <div class="widget">
-                                <div class="widget-extra themed-background-dark">
-                                    <h3 class="widget-content-light">
-                                        Latest <strong>Users Log</strong>
-                                    </h3>
-                                </div>
-                                <div class="widget-extra">
-                                    <!-- Timeline Content -->
-                                    <div class="timeline">
-                                        <ul class="timeline-list">
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 1</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Eduardo Martínez</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 2</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 3</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 4</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 5</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="active">
-                                                <div class="timeline-icon"><i class="gi gi-user"></i></div>
-                                                <div class="timeline-time"><small># 6</small></div>
-                                                <div class="timeline-content">
-                                                    <p class="push-bit"><a href="#"><strong>Nombre Apellido</strong></a></p>
-                                                    <p class="push-bit"><strong>Last Signed</strong><span style="margin-left:30px">12-03-2015</span></p>
-                                                    <p class="push-bit"><strong>Last Selection</strong><span style="margin-left:15px">100012 M0012</span></p>
-                                                    <p class="push-bit"><strong>System Login</strong><span style="margin-left:19px">13</span></p>
-                                                    <p class="push-bit"><strong>Status</strong><span style="margin-left:65px">Active</span></p>
-                                                    <p class="push-bit"><a href="#" class="btn btn-xs btn-primary">
-                                                        <i class="gi gi-eye_open"></i> View All</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                <!-- Interactive Content -->
+                                <!-- The content you will put inside div.block-content, will be toggled -->
+                                <div class="block-content">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="success" colspan="4"><strong>Fan Data</strong></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Type</strong>
+                                                    </td>
+                                                    <td><span id="spanType">HCGB</span></td>
+                                                    <td>&nbsp;</td>
+                                                    <td style="width:40px">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Size</strong>
+                                                    </td>
+                                                    <td><span id="spanSize">140</span></td>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Fan connection area</strong>
+                                                    </td>
+                                                    <td><span id="spanArea">1.568</span></td>
+                                                    <td><span id="spanAreaUnit">m2</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Pd</strong>
+                                                    </td>
+                                                    <td><span id="spanPd">0</span></td>
+                                                    <td><span id="spanPdUnit">Pa</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Accessories</strong>
+                                                    </td>
+                                                    <td><span id="spanAccessories">0</span></td>
+                                                    <td><span id="spanAccessoriesUnit">Pa</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Inlet connection</strong>
+                                                    </td>
+                                                    <td><span id="spanInConnection">0</span></td>
+                                                    <td><span id="spanInConnectionUnit">Pa</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Oulet connection</strong>
+                                                    </td>
+                                                    <td><span id="spanOutConnection">0</span></td>
+                                                    <td><span id="spanOutConnectionUnit">Pa</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="success" colspan="4"><strong>&nbsp;</strong></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Flow</strong>
+                                                    </td>
+                                                    <td><span id="spanFlow">0</span></td>
+                                                    <td><span id="spanFlowUnit">m3/h</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Total pressure</strong>
+                                                    </td>
+                                                    <td><span id="spanTotalPressure">0</span></td>
+                                                    <td><span id="spanTotalPressureUnit">Pa</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Efficiancy</strong>
+                                                    </td>
+                                                    <td><span id="spanEff">0</span></td>
+                                                    <td><span>%</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>&nbsp;</strong>
+                                                    </td>
+                                                    <td><span id="spanKomp">0</span></td>
+                                                    <td><span>Kp</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Power</strong>
+                                                    </td>
+                                                    <td><span id="spanPower">0</span></td>
+                                                    <td><span>HP</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Power at Cold Star Up</strong>
+                                                    </td>
+                                                    <td><span id="spanPowerCold">0</span></td>
+                                                    <td><span>HP</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Throttle line</strong>
+                                                    </td>
+                                                    <td><span id="spanLine">0</span></td>
+                                                    <td><span></span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Moment of inertia WR2</strong>
+                                                    </td>
+                                                    <td><span id="spanWr2">0</span></td>
+                                                    <td><span id="spanWr2Unit">Kgm2</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Total wight</strong>
+                                                    </td>
+                                                    <td><span id="spanTotalWeight">0</span></td>
+                                                    <td><span id="spanTotalWeightUnit">Kg</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Speed</strong>
+                                                    </td>
+                                                    <td><span id="spanSpeed">0</span></td>
+                                                    <td><span>rpm</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="success" colspan="4"><strong>Start torque</strong></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>At operation conditions</strong>
+                                                    </td>
+                                                    <td><span id="spanTorqueOperation">0</span></td>
+                                                    <td><span>Nm</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>At 0 flow and 20º C</strong>
+                                                    </td>
+                                                    <td><span id="spanTorqueFlow">0</span></td>
+                                                    <td><span>Nm</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr class="success">
+                                                    <th class="success"><strong>Sound</strong></th>
+                                                    <td>L wtot</td>
+                                                    <td>L ptot at <span style="display: inline;">1</span></td>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label class="control-label">To inlet and outlet</label>
+                                                    </td>
+                                                    <td><span id="spanSoundA1">0</span></td>
+                                                    <td><span id="spanSoundA2">0</span></td>
+                                                    <td><span>dB(A)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label class="control-label">To surrounding - free inlet</label>
+                                                    </td>
+                                                    <td><span id="spanSoundB1">0</span></td>
+                                                    <td><span id="spanSoundB2">0</span></td>
+                                                    <td><span>dB(A)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label class="control-label">To surrounding - ducted intet</label>
+                                                    </td>
+                                                    <td><span id="spanSoundC1">0</span></td>
+                                                    <td><span id="spanSoundC2">0</span></td>
+                                                    <td><span>dB(A)</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <!-- END Timeline Content -->
                                 </div>
+                                <p class="text-muted">Data Fan..</p>
+                                <!-- END Interactive Content -->
                             </div>
-                            <!-- END Timeline Widget -->
+                            <!-- END Interactive Block -->
                         </div>
+                        <!-- Data Fan -->
+
+                        <!-- Graphic Fan -->
                         <div class="col-md-8">
-                            <!-- Your Selection -->
-                            <div class="widget">
-                                <div class="widget-extra themed-background-dark">
-                                    <h3 class="widget-content-light">
-                                        My <strong>Selections</strong>
-                                    </h3>
+                            <!-- Interactive Block -->
+                            <div class="block">
+                                <!-- Interactive Title -->
+                                <div class="block-title">
+                                    <!-- Interactive block controls (initialized in js/app.js -> interactiveBlocks()) -->
+                                    <div class="block-options pull-right">
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-content"><i class="fa fa-arrows-v"></i></a>
+                                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-primary" data-toggle="block-toggle-fullscreen"><i class="fa fa-desktop"></i></a>
+                                    </div>
+                                    <h2>Chart <strong>Data</strong></h2>
                                 </div>
-                                <div class="widget-extra-full">
+                                <!-- END Interactive Title -->
+
+                                <!-- Interactive Content -->
+                                <!-- The content you will put inside div.block-content, will be toggled -->
+                                <div class="block-content">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="success" colspan="4"><strong>Fan Data</strong></th>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Density</strong></td>
+                                                    <td><strong>Flow</strong></td>
+                                                    <td><strong>Pressure</strong></td>
+                                                    <td><strong>Power</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>0.932 Kg/m3</td>
+                                                    <td>m3/h</td>
+                                                    <td>Pa</td>
+                                                    <td>Hp</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
                                     <div class="row">
-                                        <div class="table-responsive">
-                                            <table class="table table-vcenter table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-center">#</th>
-                                                        <th>Date</th>
-                                                        <th>Customer</th>
-                                                        <th>Reference</th>
-                                                        <th>Fan Type</th>
-                                                        <th>Fan Size</th>
-                                                        <th style="width: 150px;" class="text-center">Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-center">01</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">02</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">03</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">04</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">05</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="col-md-12">
+                                            <div style="background-image: url('img/charts/basic.png'); background-repeat: no-repeat; width:602px; height: 432px; margin: auto;">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">&nbsp;</div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div style="background-image: url('img/charts/basic.png'); background-repeat: no-repeat; width:602px; height: 432px; margin: auto;">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <p class="text-muted">Chart Data..</p>
+                                <!-- END Interactive Content -->
                             </div>
-                            <!-- END Your Selection -->
-                            <!-- Your Selection -->
-                            <div class="widget">
-                                <div class="widget-extra themed-background-dark">
-                                    <h3 class="widget-content-light">
-                                        All <strong>Selections</strong>
-                                    </h3>
-                                </div>
-                                <div class="widget-extra-full">
-                                    <div class="row">
-                                        <div class="table-responsive">
-                                            <table class="table table-vcenter table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="text-center">#</th>
-                                                        <th>Date</th>
-                                                        <th>Customer</th>
-                                                        <th>User</th>
-                                                        <th>Reference</th>
-                                                        <th>Fan Type</th>
-                                                        <th>Fan Size</th>
-                                                        <th style="width: 150px;" class="text-center">Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-center">01</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>Nombre Apellido</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">02</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>Nombre Apellido</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">03</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Nombre Apellido</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">04</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Nombre Apellido</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center">05</td>
-                                                        <td>01-01-2015</td>
-                                                        <td>Nombre Apellido</td>
-                                                        <td>Cementos de México</td>
-                                                        <td>10000112 M11223</td>
-                                                        <td>HCGB</td>
-                                                        <td>40</td>
-                                                        <td class="text-center">
-                                                            <div class="btn-group btn-group-xs">
-                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="View" class="btn btn-primary"><i class="gi gi-eye_open"></i></a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END Your Selection -->
+                            <!-- END Interactive Block -->
                         </div>
+                        <!-- END Graphic Fan -->
                     </div>
-                    <!-- END Widgets Row -->
+                    <!-- End Selected Fan -->                    
                 </div>
                 <!-- END Page Content -->
 
