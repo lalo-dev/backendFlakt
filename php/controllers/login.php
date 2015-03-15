@@ -147,11 +147,12 @@
 		
 		$vQuery = "";
 		$vQuery = " 
-					SELECT *
+					SELECT
+						*
 					FROM
 						users
 					WHERE 						
-						email = '".$_POST['email']."'
+						user = '".$_POST['email']."'
 						AND password = 
 								AES_ENCRYPT( '".$_POST['password']."' ,
 									(SELECT value FROM configurations WHERE configurationId = 1)) 

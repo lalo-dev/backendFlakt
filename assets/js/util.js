@@ -41,7 +41,6 @@ function peticionAjax(datos,url){
 }
 
 function peticionAjaxJSON(datos,url){
-
   return  $.ajax({
         data: datos,
         type: "POST",
@@ -52,78 +51,61 @@ function peticionAjaxJSON(datos,url){
               $.unblockUI();
             },
       });
-
 }
 
-function onKPSoloNum(evt){
-  
-  if(evt.keyCode != 13){
+function onKPSoloNum (evt) {
+  if (evt.keyCode != 13) {
       var theEvent = evt || window.event;
-      var key = theEvent.keyCode || theEvent.which;
-      key = String.fromCharCode( key );
+      var key      = theEvent.keyCode || theEvent.which;
+      key          = String.fromCharCode( key );
 
       var regex = /[0-9]|\./;
-      if( !regex.test(key) ) {
+      if ( !regex.test(key) ) {
         theEvent.returnValue = false;
-        if(theEvent.preventDefault) theEvent.preventDefault();
+        if (theEvent.preventDefault) {
+          theEvent.preventDefault();
+        }
       }
     }
-
 }
 
-function validaSesion(){
-
+function validaSesion () {
   var vDatos = "acc=validaSesion";
-  var vUrl = "php/02Controladores/CLogin.php";
+  var vUrl   = "php/controllers/login.php";
 
   peticionAjax(vDatos, vUrl).done(function(vRes) {
-      
-      if(vRes == 0){
+      if (vRes == 0) {
         window.location.href = "login.php";
-      }
-      
+      }    
   });
 }
 
-function cerrarSesion(){
-  
+function cerrarSesion () {
   var vDatos = "acc=cerrarSesion";
-  var vUrl = "php/02Controladores/CLogin.php";
+  var vUrl   = "php/controllers/login.php";
 
   peticionAjax(vDatos, vUrl).done(function(vRes) {
-      
-      if(vRes == 0){
+      if (vRes == 0) {
         window.location.href = "login.php";
       }
-      
   });
-
 }
 
-function msjRojoCerrable(mensaje){
-
-  return  "<div class='alert alert-danger alert-dismissible' role='alert'>"
-              + "<button type='button' class='close' data-dismiss='alert'>"
-              + "<span aria-hidden='true'>&times;</span>"
-              + "<span class='sr-only'>Close</span></button>"
+function msjRojoCerrable (mensaje) {
+  return  "<div class='alert alert-danger alert-dismissable'>"
+          + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
           + mensaje 
           + "</div> ";
-
 }
 
-function msjVerdeCerrable(mensaje){
-
-  return  "<div class='alert alert-success alert-dismissible' role='alert'>"
-              + "<button type='button' class='close' data-dismiss='alert'>"
-              + "<span aria-hidden='true'>&times;</span>"
-              + "<span class='sr-only'>Close</span></button>"
+function msjVerdeCerrable (mensaje) {
+  return  "<div class='alert alert-success alert-dismissable'>"
+          + "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>"
           + mensaje 
           + "</div> ";
-
 }
 
-function limpiarformulario(formulario){
-
+function limpiarformulario (formulario) {
    /* Se encarga de leer todas las etiquetas input del formulario*/
    $(formulario).find('input').each(function() {
       switch(this.type) {
@@ -146,5 +128,4 @@ function limpiarformulario(formulario){
    $(formulario).find('textarea').each(function(){
       $(this).val('');
    });
-
 }
