@@ -212,7 +212,6 @@ function validaUsuario() {
     var vContrasenia = htmlEntities($("#login-password").val());
     var vDatos       = "acc=validaUsuario&email=" + vUsuario + "&password=" + vContrasenia;
     var vUrl         = "php/controllers/login.php";
-    alert(vUsuario+'-'+vContrasenia);
 
     peticionAjax(vDatos, vUrl).done(function(vRes) {
         if(vRes == 1){

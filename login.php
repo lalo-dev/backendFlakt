@@ -63,8 +63,7 @@
 
             <!-- Login Block -->
             <div class="block push-bit">
-                <div>
-                    <p id="cMensajes" class="text-danger text-center">TEST</p>
+                <div id="cMensajes">
                 </div>
                 <!-- Login Form -->
                 <form method="post" id="form-login" class="form-horizontal form-bordered form-control-borderless">

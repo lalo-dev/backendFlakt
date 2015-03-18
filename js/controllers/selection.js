@@ -1,11 +1,5 @@
 $(document).ready(function() {
-	
-	$.blockUI();
-
 	validaSesion();
-
-	/*initialize the javascript*/
-	App.init();
 
 	$("#fanCentrifugal").hide();
     $("#fanAxial").hide();
@@ -28,7 +22,6 @@ $(document).ready(function() {
       $("#tools").toggle();
     });
     
-	App.wizard();      
 	$('.md-trigger').modalEffects();
 
 	cargaInicialSelection();
@@ -49,6 +42,7 @@ function cargaInicialSelection(){
 		});	  
 
 	});
+
 	console.warn('Inicio de peticion Ajax');
 	$.when(
 		$.ajax({
@@ -152,7 +146,6 @@ function cargaInicialSelection(){
 		$("#txtSoundDistance").val(vRes[0].Secc4.SpDistance);
 		$("#txtSoundMax").val(vRes[0].Secc4.SpMaxSound);
 
-		$.unblockUI();
 	});
 
 
@@ -198,8 +191,6 @@ function cambiarSeleccionUnidades(seleccion){
 }
 
 function actualizaSelection(resumen){
-	
-	$.blockUI();
 
 	/* Generar objeto Selection para enviar*/
 	var vSelection = {
@@ -293,7 +284,7 @@ function actualizaSelection(resumen){
 
 	/* Consolidando objeto Selection */
 	peticionAjax(vDatos, vUrl).done(function(vRes) { 
-		$.unblockUI();
+		
 
 		/* Si el parametro resumen == 'ok' se redirecciona a resume.php */
 		if (resumen == 'ok') {
