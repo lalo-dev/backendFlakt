@@ -163,7 +163,7 @@
 		if (count($vRes) === 1) {
 			if($vRes[0]["activeAccount"] == 1){
 				$_SESSION["userId"]           = $vRes[0]["userId"];
-				$_SESSION["completeUserName"] = $vRes[0]["name"]." ".$vRes[0]["firstLastName"];
+				$_SESSION["completeUserName"] = $vRes[0]["name"]." ".$vRes[0]["firstLastName"]." ".$vRes[0]["secondLastName"];
 				$_SESSION["userName"]         = $vRes[0]["name"];
 				echo "1";
 			} else {

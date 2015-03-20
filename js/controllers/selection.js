@@ -1,79 +1,56 @@
 $(document).ready(function() {
 	validaSesion();
-
-	$("#fanCentrifugal").hide();
-    $("#fanAxial").hide();
-    $("#fanAir").hide();
-    $("#tools").hide();
-
-    $(".fanCentrifugal").click(function(){
-      $("#fanCentrifugal").toggle();
-    });
-
-    $(".fanAxial").click(function(){
-      $("#fanAxial").toggle();
-    });
-
-    $(".fanAir").click(function(){
-      $("#fanAir").toggle();
-    });
-
-    $(".tools").click(function(){
-      $("#tools").toggle();
-    });
-    
-	$('.md-trigger').modalEffects();
-
+	
 	cargaInicialSelection();
-
 });
 
 function cargaInicialSelection(){
-	
-	/*Cargando Select Contact cuando Customer cambie*/
-	$("#slcCustomer").change(function() {
-		
-		var vCustomerId = $("#slcCustomer").val();
-		var vDatos = "acc=obtenerSlcContactPorCustomerId&CustomerId=" + vCustomerId;
-		var vUrl = "php/02Controladores/CSelection.php";
-
-		peticionAjax(vDatos, vUrl).done(function(vRes) {
-			$("#slcCustomerContact").html(vRes);		
-		});	  
-
-	});
-
 	console.warn('Inicio de peticion Ajax');
 	$.when(
 		$.ajax({
 			data: "acc=obtenerSlcCustomer",
 			type: "POST",
-			url: "php/02Controladores/CSelection.php"
+			url: "php/controllers/selection.php"
 		}),
 		$.ajax({
 			data:"acc=iniciaSeleccion",
 			type: "POST",
-			url: "php/02Controladores/CSelection.php",
+			url: "php/controllers/selection.php",
 			dataType: "json"
 		})
 	).done(function(vCustomers, vRes){
 		console.warn('Despues del done');
 
 		$("#slcCustomer").html(vCustomers);
+
+		/*Cargando Select Contact cuando Customer cambie*/
+		$("#slcCustomer").change(function() {
+			var vCustomerId = $("#slcCustomer").val();
+			var vDatos      = "acc=obtenerSlcContactPorCustomerId&CustomerId=" + vCustomerId;
+			var vUrl        = "php/controllers/selection.php";
+
+			peticionAjax(vDatos, vUrl).done(function(vRes) {
+				$("#slcContact").html(vRes);
+			});
+		});
+		
 		
 		//Asignando valores a la vista Selection
 		//Seccion#1
-		$("#spnSelectionId").text(vRes[0].Secc1.SelectionId);
-		$("#spnSelectionDate").text(vRes[0].Secc1.SelectionDate); 
-		$("#spnSeller").text(vRes[0].Secc1.Seller); 		
-		$("#slcCustomer").val(vRes[0].Secc1.CustomerId); 	
+		$("#spnSelectionId").val(vRes[0].Secc1.SelectionId);
+		$("#spnNoSelection").text(vRes[0].Secc1.SelectionId);
+		$("#spnSelectionDate").text(vRes[0].Secc1.SelectionDate);
+		$("#slcCustomer").val(vRes[0].Secc1.CustomerId);
+		$("#txtContact").val(vRes[0].Secc1.ContactName);
 		
-		if(vRes[0].Secc1.CustomerId != "")
+		if (vRes[0].Secc1.CustomerId != "") {
 			cargaSlcCustomerContact(vRes[0].Secc1.CustomerId, vRes[0].Secc1.CustomerContactId);
+		}
 
-		$("#txtReference").val(vRes[0].Secc1.Reference); 
+		$("#txtReference").val(vRes[0].Secc1.Reference);
 		$("#txtNoProposal").val(vRes[0].Secc1.NoProposal);
-		$("#slcCustomerContact").val(vRes[0].Secc1.CustomerContactId); 
+		$("#slcContact").val(vRes[0].Secc1.CustomerContactId);
+		
 		
 		//Seccion#2
 		if(vRes[0].Secc2.Unit != ""){
@@ -81,37 +58,6 @@ function cargaInicialSelection(){
 		}
 
 		//Seccion#3
-		//Filters
-		$("#txtOutletVelocityMax").val(vRes[0].Secc3.Filters.OutletVelocityMax);
-		$("#txtOutletVelocityMin").val(vRes[0].Secc3.Filters.OutletVelocityMin);
-		$("#txtSoundMax").val(vRes[0].Secc3.Filters.SoundMax);
-		$("#txtSoundMin").val(vRes[0].Secc3.Filters.SoundMin);
-		$("#txtEfficiencyMax").val(vRes[0].Secc3.Filters.EfficiencyMax);
-		$("#txtEfficiencyMin").val(vRes[0].Secc3.Filters.EfficiencyMin);
-		$("#txtDiameterMax").val(vRes[0].Secc3.Filters.DiameterMax);
-		$("#txtDiameterMin").val(vRes[0].Secc3.Filters.DiameterMin);
-		//AirConditions
-		$("#txtDensityStandar").val(vRes[0].Secc3.AirConditions.DensityStandar);
-		$("#txtDensityOperation").val(vRes[0].Secc3.AirConditions.DensityOperation);
-		$("#txtTemperatureStandar").val(vRes[0].Secc3.AirConditions.TemperatureStandar);
-		$("#txtTemperatureOperation").val(vRes[0].Secc3.AirConditions.TemperatureOperation);
-		$("#txtAltitudeStandar").val(vRes[0].Secc3.AirConditions.AltitudeStandar);
-		$("#txtAltitudeOperation").val(vRes[0].Secc3.AirConditions.AltitudeOperation);
-		$("#txtDampStandar").val(vRes[0].Secc3.AirConditions.DampStandar);
-		$("#txtDampOperation").val(vRes[0].Secc3.AirConditions.DampOperation);
-		$("#txtPressureStandar").val(vRes[0].Secc3.AirConditions.PressureStandar);
-		$("#txtPressureOperation").val(vRes[0].Secc3.AirConditions.PressureOperation);
-		$("#txtWetbulbtempStandar").val(vRes[0].Secc3.AirConditions.WetbulbtempStandar);
-		$("#txtWetbulbtempOperation").val(vRes[0].Secc3.AirConditions.WetbulbtempOperation);
-		$("#txtDrybulbtempStandar").val(vRes[0].Secc3.AirConditions.DrybulbtempStandar);
-		$("#txtDrybulbtempOperation").val(vRes[0].Secc3.AirConditions.DrybulbtempOperation);
-		//MotorOptions
-		$("#slcSpeedControlType").val(vRes[0].Secc3.MotorOptions.SpeedControlType);
-		$("#slcEnclosure").val(vRes[0].Secc3.MotorOptions.Enclosure);
-		$("#slcSupply").val(vRes[0].Secc3.MotorOptions.Supply);
-		$("#slcSupply1").val(vRes[0].Secc3.MotorOptions.Supply1);
-		$("#slcSupply2").val(vRes[0].Secc3.MotorOptions.Supply2);
-		$("#slcServiceFactor").val(vRes[0].Secc3.MotorOptions.ServiceFactor);
 		//Accessories
 		if (vRes[0].Secc3.Accessories.IvcIn_1  == 1) { $("#ivcIn_1").attr('checked', true); }
 		if (vRes[0].Secc3.Accessories.IvcOut_1  == 1) { $("#ivcOut_1").attr('checked', true); }
@@ -134,6 +80,9 @@ function cargaInicialSelection(){
 
 		//Seccion#4
 		$("#slcBladeType").val(vRes[0].Secc4.BladeType);
+		$("#slcFlowUnit").val(vRes[0].Secc4.FlowUnit);
+		$("#slcPressureUnit").val(vRes[0].Secc4.PressureUnit);
+		$("#slcDensityNormalUnit").val(vRes[0].Secc4.DensityNormalUnit);
 		$("#slcFanArragment").val(vRes[0].Secc4.FanArragment);
 		$("#txtAmbientPressure").val(vRes[0].Secc4.AmbientPressure);
 		$("#slcAmbientPressureUnit").val(vRes[0].Secc4.AmbientPressureUnit);
@@ -145,30 +94,25 @@ function cargaInicialSelection(){
 		$("#slcMotor").val(vRes[0].Secc4.Motor);
 		$("#txtSoundDistance").val(vRes[0].Secc4.SpDistance);
 		$("#txtSoundMax").val(vRes[0].Secc4.SpMaxSound);
-
 	});
-
-
 }
 
 function cargaSlcCustomerContact(customerId, customerContactId){
-   	
 	var vCustomerId = customerId;
-	var vDatos = "acc=obtenerSlcContactPorCustomerId&CustomerId=" + vCustomerId;
-	var vUrl = "php/02Controladores/CSelection.php";
+	var vDatos      = "acc=obtenerSlcContactPorCustomerId&CustomerId=" + vCustomerId;
+	var vUrl        = "php/controllers/selection.php";
 
 	peticionAjax(vDatos, vUrl).done(function(vRes) {
-		$("#slcCustomerContact").html(vRes);		
-		$("#slcCustomerContact").val(customerContactId);
+		$("#slcContact").html(vRes);		
+		$("#slcContact").val(customerContactId);
 	});	  
-
 }
 
 function cambiarSeleccionUnidades(seleccion){
 	if(seleccion == "SI"){
 		$("#hdnUnit").val("SI");
-		$(".sistemaSA").removeClass("primary-emphasis");		
-		$(".sistemaSI").addClass("primary-emphasis");
+		$(".sistemaSA").removeClass("themed-color");		
+		$(".sistemaSI").addClass("themed-color");
 		
 		$(".btnSistemaSI").addClass("btn-primary").removeClass("btn-default");
 		$(".btnSistemaSA").removeClass("btn-primary").addClass("btn-default");
@@ -178,8 +122,8 @@ function cambiarSeleccionUnidades(seleccion){
 		$('.uSI').show();
 	}else{
 		$("#hdnUnit").val("SA");
-		$(".sistemaSA").addClass("primary-emphasis");
-		$(".sistemaSI").removeClass("primary-emphasis");
+		$(".sistemaSA").addClass("themed-color");
+		$(".sistemaSI").removeClass("themed-color");
 
 		$(".btnSistemaSA").addClass("btn-primary").removeClass("btn-default");
 		$(".btnSistemaSI").removeClass("btn-primary").addClass("btn-default");
@@ -196,51 +140,18 @@ function actualizaSelection(resumen){
 	var vSelection = {
 						"Secc1": {
 							"SelectionId"       : $("#spnSelectionId").text(),
+							"NoSelection"       : $("#spnNoSelection").text(),
 							"SelectionDate"     : $("#spnSelectionDate").text(),
-							"Seller"            : $("#spnSeller").text(),
 							"CustomerId"        : $("#slcCustomer").val(),
+							"CustomerContactId" : $("#slcContact").val(),
+							"ContactName"       : $("#txtContact").val(),
 							"Reference"         : $("#txtReference").val(),
-							"NoProposal"        : $("#txtNoProposal").val(),
-							"CustomerContactId" : $("#slcCustomerContact").val()
+							"NoProposal"        : $("#txtNoProposal").val()
 					    },
 					    "Secc2": {
 							"Unit": $("#hdnUnit").val()
 					    },
 					    "Secc3" : {
-							"Filters": {
-								"OutletVelocityMax" : $("#txtOutletVelocityMax").val(),
-								"OutletVelocityMin" : $("#txtOutletVelocityMin").val(),
-								"SoundMax"          : $("#txtSoundMax").val(),
-								"SoundMin"          : $("#txtSoundMin").val(),
-								"EfficiencyMax"     : $("#txtEfficiencyMax").val(),
-								"EfficiencyMin"     : $("#txtEfficiencyMin").val(),
-								"DiameterMax"       : $("#txtDiameterMax").val(),
-								"DiameterMin"       : $("#txtDiameterMin").val()
-							},
-							"AirConditions" : {
-								"DensityStandar"       : $("#txtDensityStandar").val(),
-								"DensityOperation"     : $("#txtDensityOperation").val(),
-								"TemperatureStandar"   : $("#txtTemperatureStandar").val(),
-								"TemperatureOperation" : $("#txtTemperatureOperation").val(),
-								"AltitudeStandar"      : $("#txtAltitudeStandar").val(),					        	
-								"AltitudeOperation"    : $("#txtAltitudeOperation").val(),
-								"DampStandar"          : $("#txtDampStandar").val(),
-								"DampOperation"        : $("#txtDampOperation").val(),
-								"PressureStandar"      : $("#txtPressureStandar").val(),
-								"PressureOperation"    : $("#txtPressureOperation").val(),
-								"WetbulbtempStandar"   : $("#txtWetbulbtempStandar").val(),
-								"WetbulbtempOperation" : $("#txtWetbulbtempOperation").val(),
-								"DrybulbtempStandar"   : $("#txtDrybulbtempStandar").val(),
-								"DrybulbtempOperation" : $("#txtDrybulbtempOperation").val()
-					     	},
-					     	"MotorOptions" : {
-								"SpeedControlType" : $("#slcSpeedControlType").val(),
-								"Enclosure"        : $("#slcEnclosure").val(),
-								"Supply"           : $("#slcSupply").val(),
-								"Supply1"          : $("#slcSupply1").val(),
-								"Supply2"          : $("#slcSupply2").val(),
-								"ServiceFactor"    : $("#slcServiceFactor").val()
-					     	},
 					     	"Accessories" : {
 								"IvcIn_1"       : $("#ivcIn_1").is(':checked') ? 1 : 0,
 								"IvcOut_1"      : $("#ivcOut_1").is(':checked') ? 1 : 0,
@@ -280,7 +191,7 @@ function actualizaSelection(resumen){
 
 	var vDatos =  "acc=consolidaSelection&selection=" + jQuery.stringify(vSelection);
 	
-	var vUrl = "php/02Controladores/CSelection.php";
+	var vUrl = "php/controllers/selection.php";
 
 	/* Consolidando objeto Selection */
 	peticionAjax(vDatos, vUrl).done(function(vRes) { 
