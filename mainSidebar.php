@@ -5,7 +5,7 @@
         <div class="sidebar-content">
             <!-- Brand -->
             <a href="dashboard.php" class="sidebar-brand">
-                <strong> Flakt</strong> <small>Fans</small><img src="img/icon-blanco.png" style="margin-left:15px;" alt="FLAKT">
+                <strong> Flakt</strong> <small>Fans</small><img src="assets/img/icon-blanco.png" style="margin-left:15px;" alt="FLAKT">
             </a>
             <!-- END Brand -->
 
@@ -13,7 +13,7 @@
             <div class="sidebar-section sidebar-user clearfix">
                 <div class="sidebar-user-avatar">
                     <a href="javascript:void(0)">
-                        <img src="img/placeholders/avatars/avatarPersona.jpg" alt="avatar">
+                        <img src="assets/img/placeholders/avatars/avatarPersona.jpg" alt="avatar">
                     </a>
                 </div>
                 <div class="sidebar-user-name"><?php echo $_SESSION["userName"]; ?></div>

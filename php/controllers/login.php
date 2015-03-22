@@ -118,8 +118,8 @@
 	function validaSesion() {
 		$vEnSesion = "0";
 
-		if (isset($_SESSION["UserId"])) {
-			if ($_SESSION["UserId"] > 0) {
+		if (isset($_SESSION["userId"])) {
+			if ($_SESSION["userId"] > 0) {
 				$vEnSesion = "1";
 			}
 		}

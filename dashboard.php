@@ -507,7 +507,9 @@
 
         <!-- Script JS -->
         <script>
-            validaSesion();
+            $(document).ready(function() {
+               validaSesion(); 
+            });
         </script>
         <!-- END Script JS -->
     </body>
